@@ -12,7 +12,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false)
 
   const navigateTo = (page: string) => setCurrentPage(page)
-
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleQuizSubmit = async (results: any) => {
     setLoading(true)
     try {

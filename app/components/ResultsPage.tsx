@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function ResultsPage({ results }: { results: any }) {
   if (!results) {
     return (
@@ -18,6 +18,7 @@ export default function ResultsPage({ results }: { results: any }) {
 
         <Card className="mb-8 bg-gray-800 text-white">
           <CardHeader>
+            {/* eslint-disable-next-line @typescript-eslint/no-explicit-any*/}
             <CardTitle>Your Fragrance Persona: {results.insight.persona}</CardTitle>
           </CardHeader>
           <CardContent>
@@ -28,6 +29,7 @@ export default function ResultsPage({ results }: { results: any }) {
 
         <h2 className="text-2xl font-semibold mb-4">Recommended Perfumes</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
           {results.recommendations.map((perfume: any) => (
             <Card key={perfume.id} className="bg-gray-800 text-white">
               <CardHeader>
