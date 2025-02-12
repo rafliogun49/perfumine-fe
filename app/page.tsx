@@ -6,6 +6,8 @@ import QuizPage from "./components/QuizPage"
 import ResultsPage from "./components/ResultsPage"
 import axios from "axios"
 
+export const runtime = "edge";
+
 export default function Home() {
   const [currentPage, setCurrentPage] = useState("landing")
   const [quizResults, setQuizResults] = useState(null)
