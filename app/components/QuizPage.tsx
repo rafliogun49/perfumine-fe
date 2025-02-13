@@ -52,6 +52,9 @@ const questions = [
       "🍊 Fresh & citrus – segar dan energik, cocok untuk mood booster.",
       "🍂 Woody & earthy – hangat dan maskulin, memberi kesan kuat.",
       "🍦 Gourmand – manis dan menggoda, seperti vanila dan karamel.",
+      "🌫️ Powdery – halus dan elegan, seperti aroma bedak yang lembut.",
+      "🌊 Aquatic – bersih dan menyegarkan, seperti aroma laut dan hujan.",
+      "🌶️ Spicy – tajam dan eksotis, seperti kayu manis dan lada hitam.",
       "❌ Aku belum tahu – bantu aku menemukan aroma yang pas!",
     ],
   },
@@ -170,7 +173,7 @@ export default function QuizPage({ onSubmit }: { onSubmit: (results: any) => voi
               <button
                 key={index}
                 onClick={() => handleAnswer(option)}
-                className={`w-full py-2 px-4 rounded-lg border text-left transition duration-300 ease-in-out transform hover:scale-105 ${answers[question.id] === option ? 'bg-yellow-500 text-white' : 'bg-gray-700 text-white'}`}
+                className={`w-full py-2 px-4 rounded-lg border text-left transition duration-100 ease-in-out transform hover:bg-gray-900 text-white ${answers[question.id] === option ? 'bg-gray-900 text-white' : 'bg-gray-700 text-white'}`}
               >
                 {option}
               </button>

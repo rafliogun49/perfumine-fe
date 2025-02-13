@@ -34,7 +34,7 @@ export default function Home() {
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
         <div className="flex flex-col items-center text-center">
           <div className="loader mb-4"></div>
-          <p className="text-xl">AI memikirkan rekomendasi parfum yang tepat untukmu</p>
+          <p className="text-xl">AI sedang mencari parfum yang tepat untukmu</p>
         </div>
       </div>      
       )}
