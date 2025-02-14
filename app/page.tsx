@@ -41,6 +41,9 @@ export default function Home() {
       {currentPage === "landing" && <LandingPage onStart={() => navigateTo("quiz")} />}
       {currentPage === "quiz" && <QuizPage onSubmit={handleQuizSubmit} />}
       {currentPage === "results" && <ResultsPage results={quizResults} />}
+      <div className="flex justify-center text-center">
+        <p className="text-sm">Made by <a href="https://www.instagram.com/rafliogun49" target="_blank">Rafli</a></p>
+      </div>
     </main>
   )
 }
